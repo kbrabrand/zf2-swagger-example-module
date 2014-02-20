@@ -1,0 +1,17 @@
+{
+    "name": "kbrabrand/zf2-swagger-example-module",
+    "description": "Dummy API module ZF2 showing example usage of the Swagger PHP annotations",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/kbrabrand/zf2-swagger-example-module",
+    "keywords": ["swagger", "zf2", "example"],
+    "require": {
+        "php": ">=5.3.3",
+
+    },
+    "autoload": {
+        "psr-0": {
+            "SwaggerExample": "src/"
+        }
+    }
+}
