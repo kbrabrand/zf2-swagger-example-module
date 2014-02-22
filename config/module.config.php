@@ -9,9 +9,9 @@ return array(
     'router' => array(
         'routes' => array(
             'swagger-example-message' => array(
-                'type' => 'method',
+                'type' => 'Segment',
                 'options' => array(
-                    'route' => '/api/messages',
+                    'route' => '/api/messages[/:id]',
                     'defaults' => array(
                         'controller' => 'SwaggerExample\Controller\Message'
                     )

@@ -13,6 +13,7 @@ use Zend\View\Model\JsonModel;
  * )
  */
 class MessageController extends AbstractRestfulController {
+
     /**
      * @SWG\Api(
      *     description="Message operations",
@@ -21,9 +22,9 @@ class MessageController extends AbstractRestfulController {
      *         method="GET",
      *         summary="Fetches a list of all the messages",
      *         type="array",
-     *         @SWG\Items("Message")
+     *         @SWG\Items("Message"),
+     *         @SWG\ResponseMessage(code=200, message="OK")
      *     )
-     *     @SWG\ResponseMessage(code=200, message="OK")
      * )
      */
     public function getList() {
